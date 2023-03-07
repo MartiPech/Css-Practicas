@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*box-sizing sirve para que no sume dimension con padding o margin o otro */
+    background: #6e18f3;
+    font-family: "poppins", sans-serif;
+}
+
+.texto{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.texto h2{
+    font-size: 5em;
+    line-height: 1em;
+    /*line-height puedo modificar la altura de la linea de texto*/
+    padding: 5px 20px;
+}
+
+.box{
+    border-radius: 10px;
+    color:#fff;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box-2{
+    color: #6e18f3;
+    padding: 40px;
+    margin-top: 10px;
+    filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+            drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2))
+            drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+}
+
+.drop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.img-2{
+    
+    filter:drop-shadow(4px 4px 10px #238);
+}

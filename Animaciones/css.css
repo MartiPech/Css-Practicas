@@ -1,0 +1,57 @@
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: aquamarine;
+    animation-name: efecto; /*aca "creo" la animacion y le pongo nombre*/
+    animation-duration: 3s; /*lo que va a durar la animacion */
+    animation-delay: 1s; /*el tiempo que toma para reanudar la animacion*/
+    animation-iteration-count: infinite;/*OBSERVACION tuve que poner esta propiedad para que se repita*/
+    animation-direction:alternate; /*le da otra direccion */
+    animation-timing-function: linear;/*con esto le das la forma de la velocidad si es constante o acelera al principio y desacelera al final*/
+    
+}
+/*          pongo el nombre del efecto */
+/* aca pongo el porcentaje de la animacion . en el 0% va a ser tal cosa y asi sucesivamente*/
+@keyframes efecto {
+    0%{background: aquamarine; left: 0px; top:0px;}
+    25%{background: greenyellow; left: 300px; top:0px;}
+    50%{background: blueviolet;left: 300px; top:300px;}
+    75%{background: brown; left: 0px; top:300px;}
+    100%{background: yellow; left: 0px; top:0px;}
+}
+
+
+/***********************************************************************/
+/*****************************Animaciones-2*****************************/
+/***********************************************************************/
+
+
+.caja{
+    width: 400px;
+    height: 400px;
+    background: tomato;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    clip-path: circle(50% at left top);
+
+}
+
+.caja-2{
+    width: 400px;
+    height: 400px;
+    background: goldenrod;
+    margin-left: 30px;
+    clip-path: circle(50% at left top);
+
+}
+
+.caja:hover{/*DATO : tene en cuenta que solo aplica el efecto cuando toca el cuarto de circulo .*/
+    clip-path: circle(100%);
+    transition-duration: 2s;
+}
+
+.conteiner:hover .caja-2{/*DATO : ya aca no tengo el mismo problema que arriba . ya desde la zona/superficie del conteiner esta aplicando el efecto  .*/
+    clip-path: circle(100%);
+    transition-duration: 2s;
+}

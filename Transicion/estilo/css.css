@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.item{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    transition: width 2s; 
+}
+
+.item:hover{
+    background: red;
+    width: 400px;
+}
+
+.item-2{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    
+   
+    
+}
+
+.item-2:hover{
+    background-color: orange;
+    clip-path: circle(50% at top left );
+    transition-property: clip-path ; /* aca coloco lo que va afectar ej background , heigth, width*/
+    transition-duration:3s ;
+    
+    
+     
+}

@@ -1,0 +1,14 @@
+body{
+    background: red;
+}
+
+.center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.img-2{
+    filter: drop-shadow(4px 4px 10px #000);
+}

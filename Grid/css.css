@@ -1,0 +1,113 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.padre{
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-template-columns:1.5fr 12fr 3fr ;/*(eje x)*/
+    grid-template-rows:1fr 15fr 1.1fr;/*(eje y)*/
+    grid-gap:0.5em;
+    grid-template-areas: 
+    "header header header"
+    "nav principal aside"
+    "footer footer footer";
+
+}
+
+
+.header{
+    background-color: #1EB9B9;
+    grid-area: header;
+    text-align: center;
+}
+
+.nav{
+    background-color:#1E82B9;
+    grid-area: nav;
+    text-align: center;
+}
+
+.principal{
+    background-color:#C1C5C8 ;
+    grid-area: principal;
+    display: grid;
+    grid-gap:0.5em;
+    grid-template-areas:
+    "caja-1 caja-1"
+    "caja-2 caja-3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1.6fr 1fr ;
+}
+
+.caja-1{
+    background-color: brown;
+    grid-area: caja-1;
+    font-size: 2em;
+    text-align: center;
+    line-height: 10em;
+
+}
+
+.caja-2{
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: caja-2;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caja-3{
+    background-color: brown;
+    grid-area: caja-3;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 10em;
+}
+.aside{
+    background-color: #DCC555;
+    grid-area: aside;
+    text-align: center;
+}
+
+.footer{
+    background-color: #6EDC55;
+    grid-area: footer;
+    text-align: center;
+}
+
+@media only screen and (max-width:768px){
+    .padre{
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows:repeat(4,auto) ; /*repeat("cantidad de veces , ,medida")*/
+        grid-gap: 0.5em;
+        grid-template-areas: 
+        "header"
+        "principal"
+        "aside"
+        "footer";
+    }
+    .nav{
+        display: none;
+    }
+
+    .principal{
+        background-color:#C1C5C8 ;
+        grid-area: principal;
+        display: grid;
+        grid-gap:0.5em;
+        grid-template-areas:
+        "caja-1"
+        "caja-2"
+        "caja-3";
+        grid-template-columns: 1fr ;
+        grid-template-rows:repeat(3 , auto ) ;
+    }
+}

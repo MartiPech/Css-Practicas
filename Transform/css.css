@@ -1,0 +1,90 @@
+.padre{
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 40%;
+}
+
+.rotate{
+    max-width: 200px;
+    height: 200px;
+    background: pink;
+    text-align: center;
+    line-height: 170px;
+    color: black;
+    font-size: 2em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    
+}
+
+.translate{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    text-align: center;
+    line-height: 170px;
+    color: black;
+    font-size: 2em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.skew{
+    width: 200px;
+    height: 200px;
+    background: blueviolet;
+    text-align: center;
+    line-height: 170px;
+    color: black;
+    font-size: 2em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.scale{
+    width: 200px;
+    height: 200px;
+    background: green;
+    text-align: center;
+    line-height: 170px;
+    color: black;
+    font-size: 2em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.combination{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    text-align: center;
+    line-height: 170px;
+    color: black;
+    font-size: 2em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.rotate:hover{
+    transform: rotate(45deg);
+    transform-origin: top left;
+    /*transform-origin: 15% 10%; OTRA OPCION*/
+}
+
+.translate:hover{
+    /*translate: -3em;/*otra forma que no se si esta bien jaja*/
+    transform: translate(4em, 4em);
+}
+
+.skew:hover{
+    transform: skew(-20deg ,50deg);
+}
+
+.scale:hover{
+    transform: scale(3);/*no lleva unidad de medida*/
+}
+
+.combination:hover{
+    transform: scale(1.3) skew(20deg) translate(-80px);
+}
+

@@ -1,0 +1,35 @@
+.label-1{
+    width: 400px;
+    height: 300px;
+    background: red;
+    position: relative;
+    top: 100px;
+    z-index: 4;
+}
+
+.label-2{
+    width: 400px;
+    height: 300px;
+    background: green;
+    position: relative;
+    opacity: 0.9;
+    left: 100px;
+    z-index: 4;
+}
+
+.label-3{
+    width: 400px;
+    height: 300px;
+    background: blue;
+    position: relative;
+    margin-top: -200px;
+    left: 300px;
+    z-index: 4;
+    
+    
+}
+
+/* PARA QUE Z-INDEX TENGA EFECTO , TIENE QUE ESTAR PRESENTE SI O SI "POSITION" PERO NO STATIC
+CON ESTO NO IMPORTA LA PRECEDENCIA . ESTE PROCESO ESCUCHE QUE ES ARTIFICIAL.
+CON LA NUMERACION QUE LE DOY AL Z-INDEX LE DOY EL ORDEN A QUE COSAS VAYA ARRIBA DE LA OTRA.
+SI LA NUMERACION ES IGUAL A TODAS LAS Z-INDEX , POR DEFAULT SE RESPETA EL ORDEN DE LA PROCEDENCIA*/

@@ -1,0 +1,55 @@
+*{
+    
+   
+}
+
+.contenedor-padre{
+    width: 800px;
+    background-color:aqua;
+    margin: 20px auto;
+    height: 400px;
+    
+
+}
+
+.contenedor-padre h1{
+    color:blue ;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin-left: 100px;
+    
+}
+
+.contenedor-padre p{
+    line-height: 30px;
+    margin: 10px 20px;
+
+}
+
+.contenedor-padre hr{
+    margin: 20px 50px;
+}
+
+#one{
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+#two{
+    overflow: auto;
+}
+
+/****************************************************************************/
+/***********************OverFlow-img*****************************************/
+/****************************************************************************/
+
+.caja{
+    width: 800px;
+    height: 400px;
+    background: #3f3f;
+    overflow: hidden;
+}
+
+/* con esto puedo cortar una img total parecido a lo visto a lo anterior*/

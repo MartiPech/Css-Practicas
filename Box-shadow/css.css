@@ -1,0 +1,73 @@
+.padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box-1{
+    width: 400px;
+    height: 200px;
+    background: darkcyan;
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    
+}
+
+#b-1{
+   box-shadow: 5px 5px 5px;
+   color: orange;
+   /* 1° valor X   2°valor Y , 3° difumigar, por defalt es el color de la letra  */
+
+}
+
+#b-2{
+    box-shadow: -35px  -20px 20px violet;
+    /* al poner " - " va para el otro lado , si le pongo - al difumigador desaparece*/
+}
+
+#b-3{
+    box-shadow: 20px 20px 20px green, 30px 30px 30px orange  ;
+    /* se puede poner varias sombras , dato la prox sombra tiene que tener valores mas altos para que se note*/
+}
+
+#b-4{
+    border-radius: 80px;
+    box-shadow: 0px 0px 0px 10px purple
+    /* spread radius una expansion de la sombra , "rellenar el padding" */
+}
+
+#b-5{
+    border-radius: 50px;
+    box-shadow: 0px 30px 0px -20px peru
+    /* spread radius una expansion de la sombra , "rellenar el padding" */
+}
+
+#b-6{
+    border-radius: 50px;
+    box-shadow : inset 0px 0px 20px 0px blue , inset 0px 0px 30px 0px, inset 0px 0px 40px 0px yellow  ;
+    /* la sombra se dibuja por dentro , efecto relieve  */
+}
+
+#b-7{
+    border-radius: 50px;
+    box-shadow: inset 10px 5px 5px 
+    /* spread radius una expansion de la sombra , "rellenar el padding" */
+}
+
+#b-8{
+    box-shadow: 10px 10px, 15px 15px red , 20px 20px blue , -20px -20px 0px yellow; 
+    /**/
+}
+
+#b-9{
+    box-shadow: inset 10px 10px red , inset -10px -10px green; 
+    
+    /**/
+}

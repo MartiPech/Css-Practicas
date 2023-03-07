@@ -1,0 +1,36 @@
+body{
+    font-size:32px;
+}
+
+
+*{
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+  
+    background-color:#550a46;
+    width: 90%;
+    margin: 30px auto ;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1rem;
+
+}
+
+.contenedor h1{
+    color: #f8b400;
+    font-size: 2em;
+}
+
+.contenedor p{
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.contenedor button{
+    margin-top: 12px;
+}

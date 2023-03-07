@@ -1,0 +1,65 @@
+body{
+    background: gray;
+}
+
+.padre{
+    display: flex;
+    margin: auto ;
+    background: red;
+    border: 1px solid black;
+    width: auto;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+}
+
+.hijo{
+    
+    background: white;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center; /*eje X */
+    line-height: 100px; /*eje y*/
+    margin: 15px;
+}
+
+.c1{
+    background-color: aqua;
+    order: 3;         /*LE DA EL ORDEN */
+    flex-grow: 1;    /*LO HACE MAS ANCH0 */
+    flex-basis: 50%;/*UNA FORMA PERFECTA DE ADAPTARLO */
+}
+
+.c2{
+    background-color:pink;
+    order: 2;
+    flex-grow: 1;
+}
+
+.c3{
+    background-color: maroon;
+    order: 2;
+    flex-grow: 4;
+
+}
+
+.padre-pikachu{
+    display: flex;
+    justify-content: center;
+}
+
+.pikachu{
+   
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 20px;
+   
+
+    resize:both;
+    overflow: auto;
+}

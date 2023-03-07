@@ -1,0 +1,26 @@
+.text{
+    margin-left: 25px;
+}
+
+h2{
+    margin-bottom: 40px !important ;
+}
+
+h2 ,p{
+    margin: 0;
+}
+
+.btn{
+    border-radius: 2px solid blue;
+    background-color: blue;
+    color:antiquewhite;
+    margin-top: 100px;
+}
+
+
+@media(max-width :768px){
+    .padre{
+        flex-direction: column !important;
+    }
+
+}

@@ -1,0 +1,16 @@
+@media(max-width:485px){
+    .text-anuncio{
+        width: 90% !important ;
+    }
+
+    .servicios-fila{
+        width: 100% ;
+        
+    }
+
+    .icono-wrap{ /*Usando el wrap hago que uno quede abajo del otro */
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center !important;
+    }
+}
